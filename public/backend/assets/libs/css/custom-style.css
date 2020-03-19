@@ -1,0 +1,208 @@
+body{
+	font-family: "Google-sans",sans-serif !important;
+}
+.ff-google{
+	font-family: "Google-sans",sans-serif !important;
+}
+.fw-bold{
+	font-weight: bold !important;
+}
+.btn{
+	padding: 5px 10px;
+}
+.upper {
+	text-transform: uppercase;
+}
+.btn-add{
+	margin-top: 10px;
+    max-height: 30px;
+    color: white;
+}
+.btn-add:hove{
+	color: white;
+}
+.form-group-investor{
+	width: 100%;
+	margin: 0 30px;
+	margin-bottom: 10px;
+}
+.form-group label{
+	font-weight: bold;
+}
+.red{
+	color: red;
+}
+.custom-image-upload{
+	height: 150px;
+	width: 300px;
+	background-color: #eee;
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+}
+.ct-img-slider{
+	margin-bottom: 15px;
+	padding:10px 15px;
+}
+.ct-img-slider > img{ 
+	width: 100%;
+	height: auto;
+	min-height: 100px;
+}
+.alert{
+	margin:10px 0px;
+	padding:5px 10px;
+}
+#card-header{
+	margin-bottom: 1px !important;
+	justify-content: space-between;
+}
+#card-header > button, #card-header > a{
+	margin-right: 30px;
+}
+#list-category{
+	padding-left: 0px;
+}
+#list-category > li{
+	list-style-type: none;
+	margin-bottom: 10px;
+	padding: 5px 20px;
+	border: 1px solid #ddd;
+	color: black;
+}
+#list-category > .sub{
+	margin-left: 50px;
+}
+
+.ct-img-new{
+	height: 226px;
+}
+#tbl-news > tbody > tr > td{
+	text-align: center;
+}
+.img-new-review{
+	height: 50px;
+	width: auto;
+}
+.ct-img-investor{
+	height: 100px;
+	width: 100px;
+}
+.dataTables_filter{
+	display: none !important;
+}
+
+.custom-file-image-input {
+  display: none;
+}
+.custom-file-image .custom-file-preview {
+  display: flex;
+  flex-wrap: wrap;
+}
+.custom-file-image .custom-file-preview-list {
+  display: flex;
+  flex-wrap: wrap;
+}
+.custom-file-image .custom-file-preview-add {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -ms-grid-row-align: center;
+  align-items: center;
+  flex-direction: column;
+  border-radius: 6px;
+  width: 80px;
+  height: 80px;
+  margin-right: .75rem;
+  margin-bottom: .75rem;
+  cursor: pointer;
+  box-shadow: 0 4px 10px 0 rgba(51, 51, 51, 0.25);
+}
+.custom-file-image .custom-file-preview-item {
+  position: relative;
+  background-size: 100% 100%!important;
+  background-repeat: no-repeat;
+  border-radius: 6px;
+  width: 80px;
+  height: 80px;
+  margin-right: .75rem;
+  margin-bottom: .75rem;
+  box-shadow: 0 4px 10px 0 rgba(51, 51, 51, 0.25);
+}
+.custom-file-image .custom-file-preview-del {
+  left: -6px;
+  background: #edede8;
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  text-align: center;
+  margin-top: -6px;
+  cursor: pointer;
+  box-shadow: 0 4px 10px 0 rgba(51, 51, 51, 0.25);
+}
+#body-add{
+	margin-left: 2rem;
+	margin-right: 2rem;
+}
+.fs-19{ font-size: 19px !important }
+.color-primary { color: #ae0101!important; }
+
+/*Switch button input*/
+.button-switch {
+  display: inline-block;
+  font-size: 15px;
+  height: 25px;
+  position: relative;
+  width: 45px;
+}
+.button-switch .switch {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  height: 0;
+  font-size: 16px;
+  left: 0;
+  line-height: 0;
+  outline: none;
+  position: absolute;
+  top: 0;
+  width: 0;
+  cursor: pointer;
+}
+.button-switch .switch:before,
+.button-switch .switch:after {
+  content: '';
+  font-size: 16px;
+  position: absolute;
+}
+.button-switch .switch:before {
+  border-radius: 25px;
+  background: #bdc3c7;
+  height: 25px;
+  left: -4px;
+  top: -3px;
+  transition: background-color 0.25s ease-out 0.1s;
+  width: 45px;
+}
+.button-switch .switch:after {
+  border-radius: 50%;
+  background: #fefefe;
+  height: 23px;
+  transform: translate(0, 0);
+  transition: transform 0.25s ease-out 0.1s;
+  width: 23px;
+  left: -3px;
+  top: -2px;
+}
+.button-switch .switch:checked:after {
+  transform: translate(20px, 0);
+}
+.button-switch .switch#switch-blue:checked:before {
+  background: rgba(52, 152, 219, 0.7);
+}
+/*End Switch button input*/
+
+.color-white{ color: white!important }
+.mb-20{ margin-bottom: 20px !important }
