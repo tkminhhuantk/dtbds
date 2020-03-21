@@ -25,15 +25,13 @@
             </div>
         </div>
     </div>
-    <div class="container flex flex-col-reverse h-full mx-auto px-4">
-        <div class="">
-            <div class="flex bg-white">
-                <img class="w-1/4 object-center object-cover" src="{{ asset('assets/images/about-us.png') }}"
-                     alt="About us">
-                <div class="p-4">
-                    <h2 class="font-bold text-black text-2xl">Về chúng tôi</h2>
-                    <p>Công nghệ dẫn đầu - Bứt phá kinh doanh. Tầm nhìn mới trong ngành bất động sản</p>
-                </div>
+    <div class="relative container flex flex-col-reverse h-full mx-auto -mt-32 mb-10 px-4 z-50">
+        <div class="flex bg-white">
+            <img class="w-1/4 object-center object-cover" src="{{ asset('assets/images/about-us.png') }}"
+                 alt="About us">
+            <div class="p-4">
+                <h2 class="font-bold text-black text-2xl">Về chúng tôi</h2>
+                <p>Công nghệ dẫn đầu - Bứt phá kinh doanh. Tầm nhìn mới trong ngành bất động sản</p>
             </div>
         </div>
     </div>
