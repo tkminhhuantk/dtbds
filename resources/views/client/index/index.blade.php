@@ -25,7 +25,7 @@
             </div>
         </div>
     </div>
-    <div class="relative container flex flex-col-reverse h-full mx-auto -mt-32 mb-10 px-4 z-50">
+    <div class="relative container flex flex-col-reverse h-full mx-auto -mt-32 xl:-mt-40 mb-10 px-4 z-5">
         <div class="flex bg-white">
             <img class="w-1/4 object-center object-cover" src="{{ asset('assets/images/about-us.png') }}"
                  alt="About us">

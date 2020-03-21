@@ -1,5 +1,26 @@
 @import "tailwindcss/base";
 
+@font-face {
+    font-family: 'Google-sans';
+    src: url('../fonts/GoogleSansTTF/GoogleSans-Regular.ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Google-sans';
+    src: url('../fonts/GoogleSansTTF/GoogleSans-Bold.ttf');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Google-sans';
+    src: url('../fonts/GoogleSansTTF/GoogleSans-Italic.ttf');
+    font-weight: normal;
+    font-style: italic;
+}
+
 @import "tailwindcss/components";
 
 @import "tailwindcss/utilities";
