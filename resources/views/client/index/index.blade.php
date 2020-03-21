@@ -15,11 +15,10 @@
              x-transition:leave-end="opacity-0 transform scale-90"
         >
             <div class="grid grid-cols-1 grid-rows-1" x-data="carousel()" x-init="init()">
-                <div class="carousel col-start-1 row-start-1 h-64" x-ref="carousel">
+                <div class="carousel col-start-1 row-start-1" x-ref="carousel">
                     @foreach($sliders as $slider)
                         <div class="w-full">
-                            <img src="{{ asset($slider->url_slider) }}"
-                                    loading="lazy">
+                            <img src="{{ asset($slider->url_slider) }}" alt="">
                         </div>
                     @endforeach
                 </div>
