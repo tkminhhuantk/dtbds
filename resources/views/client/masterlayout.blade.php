@@ -47,6 +47,8 @@
 <x-header/>
 @yield('content')
 @include('client.footer')
+
+<script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.js" defer></script>
 <script src="{{ asset('assets/js/actions.js') }}"></script>
 @stack('script')
 </body>

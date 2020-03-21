@@ -1,18 +1,39 @@
 @extends('client.masterlayout')
+@push('css')
+    <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+@endpush
 @section('content')
-    <div class="relative w-full h-64 bg-main-100 mb-20">
-{{--        @foreach($sliders as $slider)--}}
+    <div class="relative w-full bg-main-100 mb-20">
 
-{{--        @endforeach--}}
-        <div class="container flex flex-col-reverse h-full mx-auto px-4">
-            <div class="-mb-16">
-                <div class="flex bg-white">
-                    <img class="w-1/4 object-center object-cover" src="{{ asset('assets/images/about-us.png') }}"
-                         alt="About us">
-                    <div class="p-4">
-                        <h2 class="font-bold text-black text-2xl">Về chúng tôi</h2>
-                        <p>Công nghệ dẫn đầu - Bứt phá kinh doanh. Tầm nhìn mới trong ngành bất động sản</p>
-                    </div>
+        <div class="row-start-2 col-start-1"
+             x-show="active == 0"
+             x-transition:enter="transition ease-out duration-300"
+             x-transition:enter-start="opacity-0 transform scale-90"
+             x-transition:enter-end="opacity-100 transform scale-100"
+             x-transition:leave="transition ease-in duration-300"
+             x-transition:leave-start="opacity-100 transform scale-100"
+             x-transition:leave-end="opacity-0 transform scale-90"
+        >
+            <div class="grid grid-cols-1 grid-rows-1" x-data="carousel()" x-init="init()">
+                <div class="carousel col-start-1 row-start-1 h-64" x-ref="carousel">
+                    @foreach($sliders as $slider)
+                        <div class="w-full">
+                            <img src="{{ asset($slider->url_slider) }}"
+                                    loading="lazy">
+                        </div>
+                    @endforeach
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container flex flex-col-reverse h-full mx-auto px-4">
+        <div class="">
+            <div class="flex bg-white">
+                <img class="w-1/4 object-center object-cover" src="{{ asset('assets/images/about-us.png') }}"
+                     alt="About us">
+                <div class="p-4">
+                    <h2 class="font-bold text-black text-2xl">Về chúng tôi</h2>
+                    <p>Công nghệ dẫn đầu - Bứt phá kinh doanh. Tầm nhìn mới trong ngành bất động sản</p>
                 </div>
             </div>
         </div>
@@ -68,7 +89,7 @@
     <div class="w-full mb-4">
         <img class="w-full" src="{{ asset('assets/images/about-us-2.png') }}" alt="">
     </div>
-    <div class="container mx-auto px-4">
+    <div class="container mx-auto px-3">
         <x-main-title title="Dự án trên toàn quốc"
                       text="63 tỉnh thành trên cả nước, bạn cần sản phẩm bất động sản ở đâu chúng tôi cũng có."
                       :h1="$false"></x-main-title>
@@ -84,3 +105,19 @@
         </div>
     </div>
 @endsection
+@push('script')
+    <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+    <script>
+        function carousel() {
+            return {
+                active: 0,
+                init() {
+                    let flkty = new Flickity(this.$refs.carousel, {
+                        wrapAround: true
+                    });
+                    flkty.on('change', i => this.active = i);
+                }
+            }
+        }
+    </script>
+@endpush
