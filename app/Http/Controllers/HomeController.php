@@ -36,7 +36,7 @@ class HomeController extends Controller
             $project->url_avatar = $url_images[0];
         }
         $news = News::where('status', 1)->orderBy('created_at', 'desc')->limit(8)->get();
-    	return view('frontend.home',[
+    	return view('client.index.index',[
             'categories'    => $categories,
             'sliders'       => $sliders,
             'projects'      => $projects,
@@ -44,7 +44,7 @@ class HomeController extends Controller
         ]);
     }
     public function getContact(){
-    	return view('frontend.contact');
+    	return view('client.contact.index');
     }
     public function getNews(){
     	$news = News::with('users')->where('status',1)->orderBy('created_at','desc')->paginate(10);

@@ -1,0 +1,11 @@
+.webkit-box {
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    word-wrap: break-word;
+}
+
+@for $i from 1 through 4 {
+    .line-clamp-#{$i} {
+        -webkit-line-clamp: $i;
+    }
+}
